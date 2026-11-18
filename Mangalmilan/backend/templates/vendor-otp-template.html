@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendor OTP Verification</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;500&display=swap');
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #fafafa;
+        margin: 0;
+        padding: 40px 10px;
+    }
+
+    .card {
+        max-width: 520px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 25px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        overflow: hidden;
+        text-align: center;
+        border-top: 6px solid #e2b0ff; /* violet accent */
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    .card-header {
+        padding: 30px 20px;
+        font-family: 'Lora', serif;
+        font-size: 26px;
+        color: #4a148c;
+        letter-spacing: 1px;
+    }
+
+    .card-header img {
+        width: 85px;
+        margin-bottom: 12px;
+        border-radius: 50%;
+        border: 2px solid #e2b0ff;
+    }
+
+    .card-body {
+        padding: 28px 25px;
+        color: #555;
+    }
+
+    .card-body p {
+        font-size: 15.5px;
+        line-height: 1.65;
+        margin: 18px 0;
+    }
+
+    .otp-code {
+        background: #f4e5ff;
+        display: inline-block;
+        padding: 20px 40px;
+        border-radius: 12px;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: #7b1fa2;
+        border: 2px solid #d1aaff;
+        margin: 25px 0;
+    }
+
+    .card-footer {
+        background: #f3e5ff;
+        font-size: 13px;
+        color: #7b1fa2;
+        padding: 20px;
+        border-top: 1px solid #e1bfff;
+    }
+
+    .highlight {
+        color: #4a148c;
+        font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+        .card {
+            margin: 20px;
+        }
+        .otp-code {
+            font-size: 28px;
+            padding: 18px 30px;
+        }
+        .card-header {
+            font-size: 22px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        <img src="cid:logo" alt="Mangalmilan Logo">
+        Welcome, {{NAME}}! ✨
+    </div>
+    <div class="card-body">
+        <p>We are excited to have you as a trusted partner on <strong>Mangalmilan</strong>.</p>
+        <p>Use the OTP below to <span class="highlight">verify your vendor account</span> and start showcasing your wedding services to couples planning their dream wedding:</p>
+        <div class="otp-code">{{OTP}}</div>
+        <p>This OTP is valid for <strong>10 minutes</strong>. Please enter it before expiry.</p>
+        <p>If you did not request this email, simply ignore it.</p>
+    </div>
+    <div class="card-footer">
+        &copy; 2025 Mangalmilan. All rights reserved. 💜
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+- [ ] Remove weddingBg import and background image usage
+- [ ] Update left panel to have a clear/plain background with gradient
+- [ ] Enhance form styling: better inputs, buttons, shadows, animations
+- [ ] Test the page for responsiveness and look

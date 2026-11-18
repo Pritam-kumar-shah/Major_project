@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify Your Account</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap');
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: #fff7f8; /* soft romantic background */
+        margin: 0;
+        padding: 40px 10px;
+    }
+
+    .card {
+        max-width: 540px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 25px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        overflow: hidden;
+        text-align: center;
+        border: 1px solid #ffe3ea;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #fcd7e0, #f9a8b6);
+        color: #fff;
+        padding: 40px 20px 30px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 32px;
+        letter-spacing: 1px;
+        position: relative;
+    }
+
+    .card-header img {
+        width: 100px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        background: #fff;
+        padding: 5px;
+    }
+
+    .card-body {
+        padding: 40px 30px;
+        color: #555;
+    }
+
+    .card-body p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 20px 0;
+    }
+
+    .otp-code {
+        background: #fff0f2;
+        display: inline-block;
+        padding: 22px 50px;
+        border-radius: 20px;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        color: #d6336c;
+        border: 2px solid #f9a8b6;
+        margin: 25px 0;
+        box-shadow: 0 5px 15px rgba(246, 166, 194, 0.4);
+    }
+
+    .card-footer {
+        background: #fff0f2;
+        font-size: 13px;
+        color: #a33b5b;
+        padding: 25px;
+        border-top: 1px solid #ffe3ea;
+    }
+
+    .highlight {
+        color: #d6336c;
+        font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+        .card {
+            margin: 20px;
+        }
+        .otp-code {
+            font-size: 30px;
+            padding: 20px 35px;
+        }
+        .card-header {
+            font-size: 28px;
+            padding: 30px 15px 25px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        <img src="cid:logo" alt="Mangalmilan Logo">
+        Welcome, {{NAME}}!
+    </div>
+    <div class="card-body">
+        <p>💌 Congratulations on joining <strong>Mangalmilan</strong>!</p>
+        <p>We are delighted to have you. Please use the OTP below to <span class="highlight">verify your account</span> and begin your magical wedding journey.</p>
+        <div class="otp-code">{{OTP}}</div>
+        <p>This OTP is valid for <strong>5 minutes</strong>. Make sure to use it before it expires.</p>
+    </div>
+    <div class="card-footer">
+        &copy; 2025 Mangalmilan. All rights reserved. 💍
+    </div>
+</div>
+
+</body>
+</html>
